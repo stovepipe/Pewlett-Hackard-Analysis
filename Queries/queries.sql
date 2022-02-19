@@ -154,3 +154,11 @@ ON (ce.emp_no = de.emp_no)
 INNER JOIN departments AS d
 ON (de.dept_no = d.dept_no);
 
+-- Extracting data for Sales and Development retirements specifically
+SELECT * 
+FROM dept_info
+WHERE dept_name = 'Sales';
+
+SELECT * 
+FROM dept_info
+WHERE dept_name IN ('Sales', 'Development');
